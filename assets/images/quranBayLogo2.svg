@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="svg2" width="1243px" height="1333.3333" viewBox="0 0 338 265" xmlns="http://www.w3.org/2000/svg">
+  <defs id="defs6">
+    <linearGradient gradientUnits="userSpaceOnUse" x1="4724.085" y1="4721.93" x2="4724.085" y2="5194.229" id="gradient-2">
+      <stop offset="0" style="stop-color: rgba(207, 214, 107, 1)"/>
+      <stop offset="1" style="stop-color: rgba(163, 171, 47, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="5344.64" y1="5058.16" x2="5344.64" y2="5753.43" id="gradient-5">
+      <stop offset="0" style="stop-color: rgba(207, 214, 107, 1)"/>
+      <stop offset="1" style="stop-color: rgba(163, 171, 47, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="5286.965" y1="4721.93" x2="5286.965" y2="5194.229" id="gradient-6">
+      <stop offset="0" style="stop-color: rgba(207, 214, 107, 1)"/>
+      <stop offset="1" style="stop-color: rgba(163, 171, 47, 1)"/>
+    </linearGradient>
+    <linearGradient gradientUnits="userSpaceOnUse" x1="4666.41" y1="5058.16" x2="4666.41" y2="5753.43" id="gradient-7">
+      <stop offset="0" style="stop-color: rgba(207, 214, 107, 1)"/>
+      <stop offset="1" style="stop-color: rgba(163, 171, 47, 1)"/>
+    </linearGradient>
+  </defs>
+  <g style="" transform="matrix(1.672633, 0, 0, 1.667903, -951.296082, -930.727966)">
+    <g id="g10" transform="matrix(1.333333, 0, 0, -1.333333, 0, 1333.333374)">
+      <g id="g12" transform="scale(0.1)">
+        <path d="m 4336.12,5469.39 660.58,-411.23 v 87.39 l -564.45,351.38 119.12,242.83 c -24.64,5.42 -49.94,10.06 -75.92,13.67 l -139.33,-284.04" style="fill-opacity: 1; fill-rule: nonzero; stroke: none; fill: url(#gradient-7);" id="path24"/>
+        <path d="M 4483.93,5508.04 4996.7,5196.3 v 59.53 c -180.95,199.31 -436.01,255.92 -438.96,256.54 l -13.53,2.89 91.75,202.12 c -14.35,4.45 -28.96,8.71 -43.94,12.65 l -108.09,-221.99" style="fill-opacity: 1; fill-rule: nonzero; stroke: none; fill: rgb(81, 195, 100);" id="path26"/>
+        <path d="m 4996.7,5288.47 v 243.05 c -23.9,18.07 -56.57,41.36 -95.87,65.86 -59.08,35.94 -142.76,79.7 -243.54,113.16 l -81.57,-179.7 c 54.03,-14.22 260.9,-77.25 420.98,-242.37" style="fill-opacity: 1; fill-rule: nonzero; stroke: none; fill: rgb(251, 255, 190);" id="path28"/>
+        <path d="m 4629.09,5166.26 -7.55,-20.22 c 26.17,7.36 49.14,8.06 66.53,0.89 46.28,-19.08 43.42,-95.45 -15.87,-189.65 -46.7,-74.2 -119.02,-146.41 -192.29,-190.49 l -16.75,-44.86 521.85,321.67 -241.97,150.63 -113.95,-27.97" style="fill-opacity: 1; fill-rule: nonzero; stroke: none; fill: url(#gradient-2);" id="path30"/>
+        <path d="m 5674.93,5469.39 -660.58,-411.23 v 87.39 l 564.45,351.38 -119.12,242.83 c 24.64,5.42 49.94,10.06 75.92,13.67 l 139.33,-284.04" style="fill-opacity: 1; fill-rule: nonzero; stroke: none; fill: url(#gradient-5);" id="path32"/>
+        <path d="M 5527.12,5508.04 5014.35,5196.3 v 59.53 c 180.94,199.31 436,255.92 438.96,256.54 l 13.53,2.89 -91.75,202.12 c 14.35,4.45 28.96,8.71 43.93,12.65 l 108.1,-221.99" style="fill-opacity: 1; fill-rule: nonzero; stroke: none; fill: rgb(61, 167, 50);" id="path34"/>
+        <path d="m 5014.35,5288.47 v 243.05 c 23.89,18.07 56.57,41.36 95.87,65.86 59.08,35.94 142.76,79.7 243.54,113.16 l 81.56,-179.7 c -54.02,-14.22 -260.89,-77.25 -420.97,-242.37" style="fill-opacity: 1; fill-rule: nonzero; stroke: none; fill: rgb(251, 255, 194);" id="path36"/>
+        <path d="m 5381.95,5166.26 7.56,-20.22 c -26.16,7.36 -49.14,8.06 -66.53,0.89 -46.28,-19.08 -43.42,-95.45 15.87,-189.65 46.7,-74.2 119.01,-146.41 192.28,-190.49 l 16.76,-44.86 -521.85,321.67 241.97,150.63 113.94,-27.97" style="fill-opacity: 1; fill-rule: nonzero; stroke: none; fill: url(#gradient-6);" id="path38"/>
+      </g>
+    </g>
+  </g>
+</svg>

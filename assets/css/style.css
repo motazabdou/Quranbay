@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Lateef&family=Tajawal:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@300&family=Sigmar+One&family=Exo+2:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+  font-family: 'thameen';
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+    "header"
+    "section"
+    "copyright";
+    position: relative;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/mosque4.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.header-overlay {
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0.8) 46%, rgba(3, 13, 66, 0.7) 100%);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50px 60px auto auto;
+  grid-template-areas:
+  "navigation"
+  "bismillah"
+  "welcome"
+  "message";
+}
+
+/**** Navigation ****/
+
+.navigation {
+  grid-area: navigation;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "logo menu";
+}
+
+.logo {
+  grid-area: logo;
+  display: flex;
+  align-content: flex-start;
+}
+
+.logo-img {
+  width: 10%;
+  margin-right: 40px;
+}
+
+.menu {
+  grid-area: menu;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu li {
+  display: inline-block;
+  line-height: 80px;
+  margin-left: 40px;
+  font-family: jazeera, sans-serif;
+}
+
+.menu li:hover {
+  color: skyblue;
+  font-weight: bold;
+}
+
+/**** Bismillah ****/
+
+.bismillah {
+  grid-aresa: bismillah;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+.bismillah-img {
+  width: 15%;
+}
+
+/**** Welcome ****/
+
+.welcome {
+  grid-aresa: welcome;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "prayer-times welcome-center empty";
+  color: white;
+  font-size: 1.2em;
+  margin: 0 auto;
+}
+
+.empty {
+  grid-area: empty;
+}
+
+.welcome-center {
+  grid-area: welcome-center;
+}
+
+.prayer-times {
+  display: none;
+  grid-area: prayer-times;
+  background: rgba(252, 246, 220, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.0px);
+  -webkit-backdrop-filter: blur(4.0px);
+  border-radius: 10px;
+  border: 1px inset rgba(255, 255, 255, 0.18);
+  padding: 10px;
+  text-align: center;
+  width: 50%;
+  transition: 2s ease-in-out;
+  direction: ltr;
+}
+
+.prayer-times span {
+  margin-left: 10px;
+}
+
+.welcome-paragraph {
+  margin-top: -40px;
+  color: #D5D21D;
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: jazeera;
+}
+
+.welcome-img {
+  width: 50%;
+}
+
+.title {
+  font-family: jazeera;
+  color: gold;
+  font-size: 2em;
+  margin: 0 10px;
+}
+
+.prayer {
+  color: white;
+  font-family: quicksand;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.prayer-times-title {
+  font-family: quicksand;
+  margin: 10px 0 20px 0;
+  font-size: 1rem;
+  text-align: center;
+  outline: none;
+  color: rgba(254, 239, 158, 1);
+  overflow: hidden;
+  background: -o-linear-gradient(transparent, transparent);
+  font-weight: bold;
+  text-shadow: rgba(151, 121, 32, 0.5) 0 -1px 10px, rgba(64, 51, 11, 0.5) 0 2px 1px, rgba(151, 121, 32, 0.5) 0 0 5px, rgba(64, 51, 11, 0.5) 0 0 20px;
+  border-radius: 25px;
+}
+
+.city {
+  color: rgb(108, 253, 231);
+}
+
+/**** Message ****/
+
+.message {
+  grid-aresa: message;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: white;
+  font-family: "jazeera";
+  font-size: 1rem;
+  line-height: 30px;
+}
+
+.message p {
+  width: 70%;
+  margin-top: -10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background: rgb(238,242,36);
+background: linear-gradient(0deg, rgba(238,242,36,1) 0%, rgba(176,168,24,1) 100%);
+  border: solid 1px silver;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+  font-family: jazeera;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  background: rgb(57,214,32);
+background: linear-gradient(0deg, rgba(57,214,32,1) 0%, rgb(63, 135, 15) 100%);
+  color: white;
+}
+
+/**** Prayer Times ****/
+
+
+
+
+/*************** Section ******************/
+
+#reciters {
+  height: auto;
+  width: 100%;
+  background-image: url("../images/whitebg.svg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+}
+
+.section-title {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-family: jazeera;
+}
+
+.reciters-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  "elhosary abdulbasit minshawy"
+  "elbanna ismael meakly"
+  "shurayyem shurayyem shurayyem";
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  grid-row-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+#reciters a {
+  text-decoration: none;
+  color: black;
+}
+
+.reciter-img {
+  width: 75%;
+  border-radius: 30px;
+  height: 200px;
+  transition: 1s linear ease-in-out;
+}
+
+.reciter-img:hover, .reciter-name:hover {
+  transform: scale(1.015);
+}
+
+.reciter-name {
+  font-weight: bold;
+  font-family: jazeera;
+  transition: 1s linear ease-in-out;
+}
+
+.elhosary {
+ grid-area: elhosary;
+}
+
+.abdulbasit {
+  grid-area: abdulbasit;
+}
+
+.minshawy {
+  grid-area: minshawy;
+}
+
+.elbanna {
+  grid-area: elbanna;
+}
+
+.ismael {
+  grid-area: ismael;
+}
+
+.meakly {
+  grid-area: meakly;
+}
+
+.shurayyem {
+  grid-area: shurayyem;
+}
+
+.shurayyem img {
+  width: 50%;
+}
+
+/************** Copyright **********/
+.copyright {
+  grid-area: copyright;
+  background: black;
+  color: white;
+  font-family: arial;
+  font-size: 0.9rem;
+}
+
+.copyright p {
+  padding: 10px;
+}
+
+/***************************************************************************************************************************/
+/************************************************************ Reciters *******************************************************/
+/***************************************************************************************************************************/
+
+.qari-grid-container {
+  background-image: url("../images/mosque.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.qari-overlay {
+  display: grid;
+  grid-template-rows: 50px auto auto auto;
+  grid-template-columns: auto;
+  grid-template-areas:
+  "qari-navigation"
+  "qari-title"
+  "qari-details"
+  "qari-player";
+  width: 100%;
+  height: auto;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0.8) 46%, rgba(5, 1, 27, 0.7) 100%);
+  }
+
+  .qari-navigation {
+    grid-area: qari-navigation;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "qari-logo qari-menu";
+  }
+
+  .qari-logo {
+    grid-area: qari-logo;
+    display: flex;
+    align-content: flex-start;
+  }
+
+  .qari-logo-img {
+    width: 10%;
+    margin-right: 40px;
+  }
+
+  .qari-menu {
+    grid-area: qari-menu;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+  }
+
+  .qari-menu a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .qari-menu li {
+    display: inline-block;
+    line-height: 80px;
+    margin-left: 40px;
+    font-family: jazeera, sans-serif;
+  }
+
+  .qari-menu li:hover {
+    color: skyblue;
+    font-weight: bold;
+  }
+
+/***** Qari-title ******/
+
+.qari-title {
+  grid-area: qari-title;
+  color: white;
+  padding: 30px 0;
+  font-size: 2rem;
+  font-family: "jazeera";
+}
+
+/***** Qari-details ******/
+
+.qari-details {
+  grid-area: qari-details;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "qari-details-img qari-details-bio";
+  width: 70%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.qari-details-img {
+  grid-area: qari-details-img;
+}
+
+.qari-details-img img {
+  width: 50%;
+  border-bottom: solid 3px white;
+  border-radius: 50%;
+}
+
+.qari-details-img .meakly-img {
+  width: 50%;
+}
+
+.qari-details-bio {
+  grid-area: qari-details-bio;
+  color: white;
+}
+
+.qari-details-bio h3 {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: jazeera;
+}
+
+/***** Qari-player ******/
+
+.qari-player {
+  grid-area: qari-player;
+  /* display: grid; */
+  justify-items: center;
+  align-items: center;
+  color: white;
+  padding: 0 5px;
+}
+
+.qari-player p {
+  font-size: 1.4rem;
+}
+
+.qari-player table {
+  text-align: right;
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: jazeera;
+}
+
+tbody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+td, th {
+  padding: 8px;
+}
+
+tr:nth-child(even){
+  background-color: rgba(255,255,255,0.7);
+  color: black;
+}
+
+th, td {
+  text-align: center;
+}
+
+td a {
+  text-decoration: none;
+}
+
+th {
+  background-color: #E6CD40;
+  color: black;
+}
+
+table a {
+  color: white;
+}
+
+
+
+/** Player **/
+
+.player {
+  box-shadow: 0 8px 32px 0 rgba(100, 108, 218, 0.37);
+  backdrop-filter: blur(5.0px);
+  -webkit-backdrop-filter: blur(5.0px);
+  border-bottom: solid 0.5px rgb(9, 1, 42);
+  border-radius: 30px;
+  padding: 10px;  /* fallback for old browsers */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+  width: 100%;
+  background:  rgba(3,37,121,0.25);
+}
+
+.player .ayah, .player .ayah-shurayyem,
+.player .ayah-elhosary, .player .ayah-minshawy,
+.player .ayah-meakly {
+    padding: 10px 0;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    font-family: "amiri-quran";
+}
+
+.player .buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons .icon {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255,255,255, 0.8);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.buttons .icon:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.player audio {
+    width: 100%;
+    height: 60px;
+    margin: 15px auto;
+}
+
+.select {
+  margin-top: 20px;
+}
+
+
+/**** Surahs Container ***/
+
+.surah-name-english {
+    font-family: arial;
+}
+
+.surah-name-arabic {
+    font-size: 24px;
+    font-family: "taha-naskh";
+}
+
+.surahs, .surahs-shurayyem,
+.surahs-elhosary, .surahs-minshawy,
+.surahs-meakly {
+  margin-top: 20px;
+  width: 100%;
+  font-family: "taha-naskh";
+}
+
+.surahs > div, .surahs-shurayyem > div,
+.surahs-elhosary > div, .surahs-minshawy > div,
+.surahs-meakly > div {
+    color: black;
+    background: rgba(252, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.0px);
+  -webkit-backdrop-filter: blur(4.0px);
+  border-radius: 10px;
+  border: 1px inset rgba(255, 255, 255, 0.18);
+  padding: 10px;
+    font-weight: bold;
+    width: calc(100% - 90px);
+    transition: 0.3s color ease;
+    cursor: pointer;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 10px 20px;
+    position: relative;
+    counter-increment: surah-counter;
+    width: 50%;
+}
+
+.surahs > div::after, .surahs-shurayyem > div::after,
+.surahs-elhosary > div::after, .surahs-minshawy > div::after,
+.surahs-meakly > div::after {
+    content: counter(surah-counter);
+    height: 50px;
+    width: 50px;
+    background-color: inherit;
+    transition: inherit;
+    box-shadow: inherit;
+    position: absolute;
+    top: 50%;
+    left: -70px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    font-size: 25px;
+    font-family: arial;
+    line-height: 50px;
+    text-align: center;
+}
+
+.surahs > div::before, .surahs-shurayyem > div::before,
+.surahs-elhosary > div::before, .surahs-minshawy > div::before,
+.surahs-meakly > div::before {
+    content: "";
+    position: absolute;
+    border: 7px solid transparent;
+    border-right-color: rgba(255,255,255, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+    left: -15px;
+}
+
+.surahs > div:hover,
+.surahs-shurayyem> div:hover,
+.surahs-elhosary> div:hover,
+.surahs-minshawy> div:hover,
+.surahs-meakly> div:hover {
+  background: white;
+}
+
+.surahs > div:hover::after,
+.surahs > div:hover::before,
+.surahs-shurayyem> div:hover::after,
+.surahs-shurayyem > div:hover::before,
+.surahs-elhosary> div:hover::after,
+.surahs-elhosary > div:hover::before,
+.surahs-minshawy> div:hover::after,
+.surahs-minshawy > div:hover::before,
+.surahs-meakly> div:hover::after,
+.surahs-meakly > div:hover::before {
+    border-right-color: white;
+    color: black;
+}
+
+.swal-title {
+    font-family: jazeera;
+}
