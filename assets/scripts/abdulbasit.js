@@ -28,7 +28,7 @@ function getSurahs(){
 
         allSurahs.forEach((surah,index) => {
             surah.addEventListener("click", function(){
-                fetch(`http://api.alquran.cloud/v1/surah/${index + 1}/ar.abdulsamad`)
+                fetch(`https://api.alquran.cloud/v1/surah/${index + 1}/ar.abdulsamad`)
                 .then(response => response.json())
                 .then(data => {
                     let verses = data.data.ayahs;
