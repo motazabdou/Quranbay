@@ -26,7 +26,7 @@ function getSurahsElhosary(){
 
         allSurahs.forEach((surah,index) => {
             surah.addEventListener("click", function(){
-                fetch(`http://api.alquran.cloud/v1/surah/${index + 1}/ar.husary`)
+                fetch(`https://api.alquran.cloud/v1/surah/${index + 1}/ar.husary`)
                 .then(response => response.json())
                 .then(data => {
                     let verses = data.data.ayahs;
