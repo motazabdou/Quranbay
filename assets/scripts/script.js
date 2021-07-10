@@ -1,4 +1,13 @@
-let prayerTimes = document.getElementsByTagName("a")[2];
+let toggleButton = document.getElementsByClassName("toggle-button")[0];
+let navigationLinks = document.getElementsByClassName("navigation-links")[0];
+
+toggleButton.addEventListener("click", function(){
+    navigationLinks.classList.toggle("active");
+    navigationLinks.style.backgroundColor = "navy";
+    navigationLinks.style.zIndex = "10";
+});
+
+let prayerTimes = document.getElementsByTagName("a")[3];
 let prayerBox = document.querySelector(".prayer-times");
 let city = document.querySelector(".city");
 let fajrTime = document.querySelector(".fajr-time");

@@ -1,13 +1,13 @@
 let audio = document.querySelector(".quranPlayer");
-let surahsContainer = document.querySelector(".surahs-elhosary");
-let ayah = document.querySelector(".ayah-elhosary");
+let surahsContainer = document.querySelector(".surahs-ismael");
+let ayah = document.querySelector(".ayah-ismael");
 let next = document.querySelector(".next");
 let play = document.querySelector(".play");
 let prev = document.querySelector(".prev");
 
-getSurahsElhosary();
+getSurahsIsmael();
 
-function getSurahsElhosary(){
+function getSurahsIsmael(){
     fetch("https://api.alquran.cloud/v1/surah")
     .then(response => response.json())
     .then(data => {
@@ -21,7 +21,7 @@ function getSurahsElhosary(){
         }
 
         //select all surahs
-        let allSurahs = document.querySelectorAll(".surahs-elhosary div");
+        let allSurahs = document.querySelectorAll(".surahs-ismael div");
 
         allSurahs.forEach((surah,index) => {
             surah.addEventListener("click", function(){
@@ -30,12 +30,12 @@ function getSurahsElhosary(){
                 .then(data => {
                     console.log(data);
                     console.log(index+1);
-                    let verses = data.reciters[117].Server + "/00" + (index+1) + ".mp3";
+                    let verses = data.reciters[161].Server + "/00" + (index+1) + ".mp3";
                     if(index > 8 && index < 98){
-                      verses = data.reciters[117].Server + "/0" + (index+1) + ".mp3";
+                      verses = data.reciters[161].Server + "/0" + (index+1) + ".mp3";
                     }
                     else if(index > 98){
-                        verses = data.reciters[117].Server + "/" + (index+1) + ".mp3";
+                        verses = data.reciters[161].Server + "/" + (index+1) + ".mp3";
                       }
                     audio.src = verses;
                     ayah.innerHTML = surah.innerText;
@@ -48,12 +48,12 @@ function getSurahsElhosary(){
 
                         index++;
 
-                        verses = data.reciters[117].Server + "/00" + (index+1) + ".mp3";
+                        verses = data.reciters[161].Server + "/00" + (index+1) + ".mp3";
                         if(index > 8 && index < 98){
-                        verses = data.reciters[117].Server + "/0" + (index+1) + ".mp3";
+                        verses = data.reciters[161].Server + "/0" + (index+1) + ".mp3";
                         }
                         else if(index > 98){
-                            verses = data.reciters[117].Server + "/" + (index+1) + ".mp3";
+                            verses = data.reciters[161].Server + "/" + (index+1) + ".mp3";
                         }
 
                         audio.src = verses;
@@ -83,12 +83,12 @@ function getSurahsElhosary(){
                     //handle next buttons
                     next.addEventListener("click", function(){
                         index++;
-                        verses = data.reciters[117].Server + "/00" + (index+1) + ".mp3";
+                        verses = data.reciters[161].Server + "/00" + (index+1) + ".mp3";
                         if(index > 8 && index < 98){
-                        verses = data.reciters[117].Server + "/0" + (index+1) + ".mp3";
+                        verses = data.reciters[161].Server + "/0" + (index+1) + ".mp3";
                         }
                         else if(index > 98){
-                            verses = data.reciters[117].Server + "/" + (index+1) + ".mp3";
+                            verses = data.reciters[161].Server + "/" + (index+1) + ".mp3";
                         }
                         audio.src = verses;
                         ayah.innerHTML = allSurahs[index].innerText;
@@ -100,12 +100,12 @@ function getSurahsElhosary(){
                     //Handle previous button
                     prev.addEventListener("click", function(){
                         index--;
-                        verses = data.reciters[117].Server + "/00" + (index+1) + ".mp3";
+                        verses = data.reciters[161].Server + "/00" + (index+1) + ".mp3";
                         if(index > 8 && index < 98){
-                        verses = data.reciters[117].Server + "/0" + (index+1) + ".mp3";
+                        verses = data.reciters[161].Server + "/0" + (index+1) + ".mp3";
                         }
                         else if(index > 98){
-                            verses = data.reciters[117].Server + "/" + (index+1) + ".mp3";
+                            verses = data.reciters[161].Server + "/" + (index+1) + ".mp3";
                         }
                         audio.src = verses;
                         ayah.innerHTML = allSurahs[index].innerText;
