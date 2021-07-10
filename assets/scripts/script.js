@@ -5,6 +5,8 @@ toggleButton.addEventListener("click", function(){
     navigationLinks.classList.toggle("active");
     navigationLinks.style.backgroundColor = "navy";
     navigationLinks.style.zIndex = "10";
+    navigationLinks.style.height = "100vh";
+    navigationLinks.style.alignItems = "center";
 });
 
 let prayerTimes = document.getElementsByTagName("a")[3];
