@@ -31,7 +31,7 @@ body {
 header {
   width: 100%;
   height: 100vh;
-  background-image: url("../images/mosque4.jpg");
+  background-image: url("../images/bg2.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -40,7 +40,7 @@ header {
 
 .header-overlay {
   background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,0.8) 46%, rgba(3, 13, 66, 0.7) 100%);
+  background: radial-gradient(circle, rgba(0,0,0,0.7) 46%, rgba(3, 13, 66, 0.6) 100%);
   height: 100%;
   width: 100%;
   display: grid;
@@ -53,80 +53,65 @@ header {
   "message";
 }
 
-/*** Checkbox ***/
+/*** New navigation ***/
+nav {
+  height: 80px;
+  width: 100%;
+}
 
-.checkbox {
+nav ul {
+  list-style: none;
+  float: left;
+  margin-left: 20px;
+}
+
+nav > label > a > img {
+  width: 50px;
+  float: right;
+  margin-right: 15px;
+  margin-top: 3px;
+}
+
+nav ul li {
   display: inline-block;
-  margin-left: -240px;
+  line-height: 50px;
+  margin-right: 30px;
 }
 
-.en, .ar {
-  width: 20px;
-  position: relative;
-  top: -10px;
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
-/*inside container that lights up when checked*/
-input[type="checkbox"]{
-  position: relative;
-  width: 90px;
-  height: 30px;
-  margin: 10px;
-  top: 5px;
+nav ul li a:hover {
+  color: rgb(82, 166, 199);
+  transition: 0.5s;
+}
+
+nav ul li a .active, nav ul li a .active:hover {
+  color: skyblue;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  color: white;
+  font-size: 30px;
+  float: left;
+  line-height: 50px;
+  margin-left: 25px;
   cursor: pointer;
-  -webkit-appearance: none;
-  background: linear-gradient(0deg, #333, #000);
-  outline: none;
-  border-radius: 20px;
-  box-shadow: 0 0 0 1px #353535, 0 0 0 2px #3e3e3e, inset 0 0 7px rgb(0,0,0,1), 0 2px 17px rgba(0,0,0,0.5), inset 0 0 12px rgba(0,0,0,0.2);
+  display: none;
 }
 
-/*button colour and properties*/
-input[type="checkbox"]:before{
-  content: '';
-  position: absolute;
-  width: 55px;
-  height: 30px;
-  background: linear-gradient(0deg, #000, #6b6b6b);
-  border-radius: 20px;
-  top: -1px;
-  left: -1px;
-  box-shadow: 0 0 0 1px #232323; /* inner highlight around button */
-  transform: scale(0.98, 0.96);
-  transition: 0.5s;
-}
-
-input:checked[type="checkbox"]:before{
-  left: 35px;
-}
-
-input[type="checkbox"]:after{
-  content: '';
-  position: absolute;
-  top: calc(50% - 2px);
-  left: 40px;
-  width: 4px;
-  height: 4px;
-  background: linear-gradient(0deg, #6b6b6b, #000); /*inner see-through circle colour */
-  border-radius: 50%;
-  transition: 0.5s;
-}
-
-input:checked[type="checkbox"]{
-background: linear-gradient(0deg, #ffda6d, #ffc721);
-box-shadow: 0 0 2px #ffda6d,0 0 0 1px #353535, 0 0 0 2px #3e3e3e, inset 0 0 7px rgb(0,0,0,1), 0 2px 17px rgba(0,0,0,0.5), inset 0 0 12px rgba(0,0,0,0.2);
-}
-
-input:checked[type="checkbox"]:after{
-  left: 75px;
-  background: #ffd863;
-  box-shadow: 0 0 5px #ffc414, 0 0 15px #ffc414;
-  transition: 0.5s;
+#check {
+  display: none;
 }
 
 /**** Navigation ****/
 
-.navigation {
+/* .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -182,7 +167,7 @@ input:checked[type="checkbox"]:after{
   width: 100%;
   background-color: white;
   border-radius: 10px;
-}
+} */
 
 /* .navigation {
   grid-area: navigation;
@@ -397,9 +382,10 @@ background: linear-gradient(0deg, rgba(57,214,32,1) 0%, rgb(63, 135, 15) 100%);
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-  "elhosary abdulbasit minshawy"
-  "elbanna ismael meakly"
-  "shurayyem shurayyem shurayyem";
+  "elhosary abdulbasit abdulbasit-murattal"
+  "minshawy elbanna ismael" 
+  "meakly shurayyem sudais" 
+  "tablawi shatri rifaat";
   width: 80%;
   height: auto;
   margin: 0 auto;
@@ -414,8 +400,8 @@ background: linear-gradient(0deg, rgba(57,214,32,1) 0%, rgb(63, 135, 15) 100%);
 }
 
 .reciter-img {
-  width: 75%;
-  border-radius: 30px;
+  width: 250px;
+  border-radius: 20px;
   height: 200px;
   transition: 1s linear ease-in-out;
 }
@@ -430,12 +416,32 @@ background: linear-gradient(0deg, rgba(57,214,32,1) 0%, rgb(63, 135, 15) 100%);
   transition: 1s linear ease-in-out;
 }
 
+.sudais {
+  grid-area: sudais;
+}
+
+.tablawi {
+  grid-area: tablawi;
+}
+
+.shatri {
+  grid-area: shatri;
+}
+
+.rifaat {
+  grid-area: rifaat;
+}
+
 .elhosary {
  grid-area: elhosary;
 }
 
 .abdulbasit {
   grid-area: abdulbasit;
+}
+
+.abdulbasit-murattal {
+  grid-area: abdulbasit-murattal;
 }
 
 .minshawy {
@@ -458,9 +464,6 @@ background: linear-gradient(0deg, rgba(57,214,32,1) 0%, rgb(63, 135, 15) 100%);
   grid-area: shurayyem;
 }
 
-.shurayyem img {
-  width: 50%;
-}
 
 /************** Copyright **********/
 .copyright {
@@ -480,7 +483,7 @@ background: linear-gradient(0deg, rgba(57,214,32,1) 0%, rgb(63, 135, 15) 100%);
 /***************************************************************************************************************************/
 
 .qari-grid-container {
-  background-image: url("../images/mosque.jpg");
+  background-image: url("../images/bg2.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -499,61 +502,30 @@ background: linear-gradient(0deg, rgba(57,214,32,1) 0%, rgb(63, 135, 15) 100%);
   width: 100%;
   height: auto;
   background: rgb(0,0,0);
-  background: radial-gradient(circle, rgba(0,0,0,0.8) 46%, rgba(5, 1, 27, 0.7) 100%);
+  background: radial-gradient(circle, rgba(0,0,0,0.7) 46%, rgba(5, 1, 27, 0.6) 100%);
   }
 
-  .qari-navigation {
-    grid-area: qari-navigation;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas: "qari-logo qari-menu";
-  }
-
-  .qari-logo {
-    grid-area: qari-logo;
-    display: flex;
-    align-content: flex-start;
-  }
-
-  .qari-logo-img {
-    width: 10%;
-    margin-right: 40px;
-  }
-
-  .qari-menu {
-    grid-area: qari-menu;
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    color: white;
-  }
-
-  .qari-menu a {
-    text-decoration: none;
-    color: white;
-  }
-
-  .qari-menu li {
-    display: inline-block;
-    line-height: 80px;
-    margin-left: 40px;
-    font-family: jazeera, sans-serif;
-  }
-
-  .qari-menu li:hover {
-    color: skyblue;
-    font-weight: bold;
-  }
 
 /***** Qari-title ******/
 
 .qari-title {
   grid-area: qari-title;
   color: white;
-  padding: 30px 0;
+  padding: 0 0 30px 0;
   font-size: 2rem;
   font-family: "jazeera";
+}
+
+.qari-title h2 {
+  display: inline-block;
+}
+
+.geometric {
+  width: 40px;
+  margin: 50px 30px 0 30px;
+  display: inline-block;
+  position: relative;
+  bottom: -10px;
 }
 
 /***** Qari-details ******/
@@ -659,25 +631,28 @@ table a {
 /** Player **/
 
 .player {
-  box-shadow: 0 8px 32px 0 rgba(100, 108, 218, 0.37);
+  box-shadow: 0px 10px 42px 0 rgba(55, 64, 201, 0.401);
   backdrop-filter: blur(5.0px);
   -webkit-backdrop-filter: blur(5.0px);
-  border-bottom: solid 0.5px rgb(9, 1, 42);
+  /* border-bottom: solid 0.1px rgb(44, 54, 194); */
   border-radius: 30px;
-  padding: 10px;  /* fallback for old browsers */
+  padding: 0 20px 20px 20px;  /* fallback for old browsers */
   position: sticky;
   top: 0;
   z-index: 1;
   background: transparent;
-  width: 100%;
-  background:  rgba(3,37,121,0.25);
+  width: 80%;
+  margin: 0 auto;
+  background:  rgba(5, 19, 39, 0.401);
 }
 
 .player .ayah, .player .ayah-shurayyem,
 .player .ayah-elhosary, .player .ayah-minshawy,
 .player .ayah-meakly, .player .ayah-ismael,
-.player .ayah-elbanna {
-    padding: 10px 0;
+.player .ayah-elbanna, .player .ayah-abdulbasit-murattal,
+.player .ayah-tablawi, .player .ayah-shatri,
+.player .ayah-sudais {
+    padding: 0 0 10px 0;
     font-size: 30px;
     color: white;
     text-align: center;
@@ -730,7 +705,9 @@ table a {
 .surahs, .surahs-shurayyem,
 .surahs-elhosary, .surahs-minshawy,
 .surahs-meakly, .surahs-ismael,
-.surahs-elbanna {
+.surahs-elbanna, .surahs-abdulbasit-murattal,
+.surahs-tablawi, .surahs-shatri,
+.surahs-sudais {
   margin-top: 20px;
   width: 100%;
   font-family: "taha-naskh";
@@ -739,7 +716,9 @@ table a {
 .surahs > div, .surahs-shurayyem > div,
 .surahs-elhosary > div, .surahs-minshawy > div,
 .surahs-meakly > div, .surahs-ismael > div,
-.surahs-elbanna > div {
+.surahs-elbanna > div, .surahs-abdulbasit-murattal > div,
+.surahs-tablawi > div, .surahs-shatri > div,
+.surahs-sudais > div {
     color: black;
     background: rgba(252, 255, 255, 0.5);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -763,7 +742,9 @@ table a {
 .surahs > div::after, .surahs-shurayyem > div::after,
 .surahs-elhosary > div::after, .surahs-minshawy > div::after,
 .surahs-meakly > div::after, .surahs-ismael > div::after,
-.surahs-elbanna > div::after {
+.surahs-elbanna > div::after, .surahs-abdulbasit-murattal > div::after,
+.surahs-tablawi > div::after, .surahs-shatri > div::after,
+.surahs-sudais > div::after {
     content: counter(surah-counter);
     height: 50px;
     width: 50px;
@@ -784,7 +765,9 @@ table a {
 .surahs > div::before, .surahs-shurayyem > div::before,
 .surahs-elhosary > div::before, .surahs-minshawy > div::before,
 .surahs-meakly > div::before, .surahs-ismael > div::before,
-.surahs-elbanna > div::before {
+.surahs-elbanna > div::before, .surahs-abdulbasit-murattal > div::before,
+.surahs-tablawi > div::before, .surahs-shatri > div::before,
+.surahs-sudais > div::before {
     content: "";
     position: absolute;
     border: 7px solid transparent;
@@ -800,7 +783,11 @@ table a {
 .surahs-minshawy> div:hover,
 .surahs-meakly> div:hover,
 .surahs-ismael> div:hover,
-.surahs-elbanna> div:hover {
+.surahs-elbanna> div:hover,
+.surahs-abdulbasit-murattal> div:hover,
+.surahs-tablawi> div:hover,
+.surahs-shatri> div:hover,
+.surahs-sudais> div:hover {
   background: white;
 }
 
@@ -817,7 +804,15 @@ table a {
 .surahs-ismael> div:hover::after,
 .surahs-ismael > div:hover::before,
 .surahs-elbanna> div:hover::after,
-.surahs-elbanna > div:hover::before {
+.surahs-elbanna > div:hover::before,
+.surahs-abdulbasit-murattal> div:hover::after,
+.surahs-abdulbasit-murattal > div:hover::before,
+.surahs-tablawi> div:hover::after,
+.surahs-tablawi > div:hover::before,
+.surahs-shatri> div:hover::after,
+.surahs-shatri > div:hover::before,
+.surahs-sudais> div:hover::after,
+.surahs-sudais > div:hover::before {
     border-right-color: white;
     color: black;
 }
@@ -916,5 +911,45 @@ table a {
   .qari-details-img img {
     width: 65%;
     margin-top: 25px;
+  }
+}
+
+@media (max-width: 952px){
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px){
+  .checkbtn {
+    display: block;
+    margin-top: 5px;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(2, 2, 76);
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    margin-left: 0;
+    z-index: 100;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 20vh 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
   }
 }
