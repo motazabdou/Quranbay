@@ -912,6 +912,10 @@ table a {
     width: 65%;
     margin-top: 25px;
   }
+    
+  .player {
+    width: 100%;
+  }
 }
 
 @media (max-width: 952px){
