@@ -483,7 +483,7 @@ background: linear-gradient(0deg, rgba(57,214,32,1) 0%, rgb(63, 135, 15) 100%);
 /***************************************************************************************************************************/
 
 .qari-grid-container {
-  background-image: url("../images/bg2.jpg");
+  background-image: url("../images/mosque.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -889,18 +889,29 @@ table a {
   .reciters-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
     grid-template-areas:
-    "elhosary abdulbasit"
-    "minshawy elbanna" 
-    "ismael meakly"
-    "shurayyem shurayyem";
-    width: 100%;
+    "elhosary abdulbasit" 
+    "abdulbasit-murattal minshawy" 
+    "elbanna ismael" 
+    "meakly shurayyem" 
+    "sudais tablawi" 
+    "shatri rifaat";
+    width: 90%;
     height: auto;
     margin: 0 auto;
     grid-row-gap: 30px;
     justify-items: center;
     align-items: center;
+  }
+
+  .reciter-img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .reciter-name {
+    font-size: 0.75rem;
   }
 
   .qari-title {
@@ -912,7 +923,7 @@ table a {
     width: 65%;
     margin-top: 25px;
   }
-    
+
   .player {
     width: 100%;
   }
