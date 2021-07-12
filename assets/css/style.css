@@ -876,7 +876,6 @@ table a {
   .welcome-paragraph {
     font-size: 1rem;
     margin-top: -10px;
-    display: none;
   }
 
   .message p {
