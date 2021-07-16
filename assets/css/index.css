@@ -75,7 +75,7 @@ body {
     display: grid;
     align-items: center;
     justify-items: center;
-    grid-template-areas: 
+    grid-template-areas:
     "header"
     "reciters"
     "dedication"
@@ -100,7 +100,7 @@ header {
     justify-items: center;
     text-align: center;
     grid-template-rows: auto auto;
-    grid-template-areas: 
+    grid-template-areas:
     "bismillah"
     "hero-img"
 }
@@ -201,6 +201,12 @@ header {
     color: black;
 }
 
+.reciter-img:hover {
+  transform: scale(1.01);
+  box-shadow: 0px 10px 42px 0 rgba(55, 64, 201, 0.401);
+  transition: 0.5s all;
+}
+
 .reciter-img {
     width: 100%;
     border-radius: 20px;
@@ -213,7 +219,7 @@ header {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-gap: 25px;
-    grid-template-areas: 
+    grid-template-areas:
     "abdulbasit-murattal abdulbasit-mujawwad elbanna-murattal elbanna-mujawwad"
     "elhosary-murattal elhosary-mujawwad minshawy-murattal minshawy-mujawwad"
     "ismael sudais shurayyem shatri"
@@ -234,18 +240,18 @@ header {
     text-decoration: none;
     color: black;
   }
-  
+
   .reciter-img {
     width: 250px;
     border-radius: 20px;
     height: 200px;
     transition: 1s linear ease-in-out;
   }
-  
+
   .reciter-img:hover, .reciter-name:hover {
     transform: scale(1.015);
   }
-  
+
   .reciter-name {
     font-weight: bold;
     font-family: jazeera;
