@@ -12,7 +12,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    background: url("../images/bg2.jpg");
+    background: url("../images/bg7.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
 }
 
 .navbar {
-    background-color: black;
+    background-color: rgba(0,0,0,0.6);
     color: white;
     display: flex;
     font-family: "cocon-next-arabic";
@@ -47,12 +47,18 @@ body {
 
 .navbar a:hover {
     color: aqua;
+    transition: 0.5s ease-in-out;
 }
 
 .logo {
     width: 40px;
     margin-right: 20px;
     margin-top: 10px;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease-in-out;
 }
 
 .menu-icon {
@@ -138,14 +144,14 @@ header {
     top: -120px;
     color: white;
     font-size: 2.5rem;
-    font-family: "taha-naskh";
+    font-family: "almushaf";
 }
 
 .hero-div a {
     position: relative;
     top: -70px;
     border: solid 1px white;
-    background-color: rgba(0,0,0,0.6);
+    background-color: #062435;
     color: white;
     text-decoration: none;
     border-radius: 30px;
@@ -156,6 +162,8 @@ header {
 .hero-div a:hover {
     background-color: aqua;
     color: black;
+    transition: 0.5s ease-in-out;
+    box-shadow: 10px 15px 45px 10px rgba(0, 255, 255, 0.41);
 }
 
 /*********************** Reciters ************************/
@@ -202,8 +210,8 @@ header {
 }
 
 .reciter-img:hover {
-  transform: scale(1.01);
-  box-shadow: 0px 10px 42px 0 rgba(55, 64, 201, 0.401);
+  transform: scale(1.02);
+  box-shadow: 10px 10px 30px 0 rgba(53, 136, 230, 0.801);
   transition: 0.5s all;
 }
 
@@ -342,10 +350,12 @@ header {
 
 #dedication {
     grid-area: dedication;
-    margin: 20px auto;
+    padding: 20px 0;
+    margin: 0 auto;
     font-family: "cocon-next-arabic";
     text-align: center;
     width: auto;
+    background-color: rgba(0,0,0,0.6);
 }
 
 #dedication p {
@@ -455,9 +465,14 @@ header {
     }
 
     .reciter-name {
-        width: 90%;
+        width: 100%;
         text-align: center;
         margin: 0 auto;
+    }
+
+    .reciter-name:hover {
+        transform: scale(1.1);
+        text-shadow: 5px 10px 42px 0 rgba(55, 64, 201, 0.401);
     }
 
     #dedication p {
