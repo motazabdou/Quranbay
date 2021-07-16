@@ -1,3 +1,10 @@
+const toggleBtnHome = document.getElementById("toggle-btn");
+const navListHome = document.querySelector(".nav-list");
+
+toggleBtnHome.addEventListener("click", function(){
+    navListHome.classList.toggle("active");
+});
+
 let toggleButton = document.getElementsByClassName("toggle-button")[0];
 let navigationLinks = document.getElementsByClassName("navigation-links")[0];
 
