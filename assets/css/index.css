@@ -1,0 +1,468 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "taha-naskh";
+    direction: rtl;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background: url("../images/bg2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    font-family: "cocon-next-arabic";
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    height: 50px;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list .list-item {
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 50px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: aqua;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-line {
+    height: 3px;
+    width: 20px;
+    background-color: white;
+    margin-bottom: 4px;
+}
+
+.active {
+    display: block;
+}
+
+/**************************** Grid container *******************************/
+.grid-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 
+    "header"
+    "reciters"
+    "dedication"
+    "copyright";
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+}
+
+header {
+    grid-area: header;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+.header-overlay {
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "bismillah"
+    "hero-img"
+}
+
+.bismillah-div {
+    grid-area: bismillah;
+}
+
+.bismillah {
+    height: 50px;
+    position: relative;
+    top: -30px;
+}
+
+.hero-div {
+    text-align: center;
+    grid-area: hero-img;
+}
+
+.hero-img {
+    width: 220px;
+    position: relative;
+    top: -130px;
+}
+
+.hero-div h2 {
+    position: relative;
+    top: -160px;
+    color:gold;
+    font-family: "cocon-next-arabic";
+}
+
+.hero-div p {
+    position: relative;
+    top: -120px;
+    color: white;
+    font-size: 2.5rem;
+    font-family: "taha-naskh";
+}
+
+.hero-div a {
+    position: relative;
+    top: -70px;
+    border: solid 1px white;
+    background-color: rgba(0,0,0,0.6);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    font-family: "cocon-next-arabic";
+}
+
+.hero-div a:hover {
+    background-color: aqua;
+    color: black;
+}
+
+/*********************** Reciters ************************/
+
+#reciters {
+    grid-area: reciters;
+    font-family: "cocon-next-arabic";
+    padding: 25px 0;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-image: url("../images/white\ background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.reciters-container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(5, auto);
+    grid-gap: 30px;
+    width: 90%;
+    margin: 0 auto;
+    justify-items: center;
+    align-items: center;
+}
+
+.reciters-heading {
+    margin: 10px 0 30px 0;
+    color: black;
+}
+
+.reciter-div {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#reciters a {
+    text-decoration: none;
+    color: black;
+}
+
+.reciter-img {
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    transition: 1s linear ease-in-out;
+}
+
+/* .reciters-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px;
+    grid-template-areas: 
+    "abdulbasit-murattal abdulbasit-mujawwad elbanna-murattal elbanna-mujawwad"
+    "elhosary-murattal elhosary-mujawwad minshawy-murattal minshawy-mujawwad"
+    "ismael sudais shurayyem shatri"
+    "tablawi meakly-murattal meakly-mujawwad suwayyid"
+    "suwayyid kahtani huthaifi lohaidan";
+    justify-items: center;
+    align-items: center;
+    width: 90%;
+    height: auto;
+}
+
+.reciter-div {
+    width: 100%;
+    height: 100%;
+}
+
+#reciters a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .reciter-img {
+    width: 250px;
+    border-radius: 20px;
+    height: 200px;
+    transition: 1s linear ease-in-out;
+  }
+  
+  .reciter-img:hover, .reciter-name:hover {
+    transform: scale(1.015);
+  }
+  
+  .reciter-name {
+    font-weight: bold;
+    font-family: jazeera;
+    transition: 1s linear ease-in-out;
+  }
+
+.abdulbasit-murattal {
+    grid-area: abdulbasit-murattal;
+}
+
+.abdulbasit-mujawwad {
+    grid-area: abdulbasit-mujawwad;
+}
+
+.elbanna-murattal {
+    grid-area: elbanna-murattal;
+}
+
+.elbanna-mujawwad {
+    grid-area: elbanna-mujawwad;
+}
+
+.elhosary-murattal {
+    grid-area: elhosary-murattal;
+}
+
+.elhosary-mujawwad {
+    grid-area: elhosary-mujawwad;
+}
+
+.minshawy-murattal {
+    grid-area: minshawy-murattal;
+}
+
+.minshawy-mujawwad {
+    grid-area: minshawy-mujawwad;
+}
+
+.ismael {
+    grid-area: ismael;
+}
+
+.sudais {
+    grid-area: sudais;
+}
+
+.shurayyem {
+    grid-area: shurayyem;
+}
+
+.shatri {
+    grid-area: shatri;
+}
+
+.tablawi {
+    grid-area: tablawi;
+}
+
+.meakly-murattal {
+    grid-area: meakly-murattal;
+}
+
+.meakly-mujawwad {
+    grid-area: meakly-mujawwad;
+}
+
+.suwayyid {
+    grid-area: suwayyid;
+}
+
+.suwayyid {
+    grid-area: suwayyid;
+}
+
+.kahtani {
+    grid-area: kahtani;
+}
+
+.huthaifi {
+    grid-area: huthaifi;
+}
+
+.lohaidan {
+    grid-area: lohaidan;
+} */
+
+/*********************** Dedication ************************/
+
+#dedication {
+    grid-area: dedication;
+    margin: 20px auto;
+    font-family: "cocon-next-arabic";
+    text-align: center;
+    width: auto;
+}
+
+#dedication p {
+    width: auto;
+    margin: 0 auto;
+    font-size: 1.2rem;
+}
+
+/*********************** Copyright ************************/
+
+#copyright {
+    grid-area: copyright;
+    background-color: black;
+    color: white;
+    border-top: solid 1px white;
+    padding: 20px auto;
+    width: 100%;
+    text-align: center;
+    direction: ltr;
+    padding: 20px 0;
+}
+
+#copyright p {
+    font-size: 0.9rem;
+    width: auto;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#copyright a {
+    text-decoration: none;
+    color: gold;
+}
+
+@media all and (max-width: 600px){
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
+
+    .logo-div {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-list .list-item {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-list {
+        display: none;
+        background-color: black;
+        width: 100%;
+        z-index: 10;
+        position: relative;
+        top: -10px;
+        transition: 1s all;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .hero-img {
+        width: 250px;
+        position: relative;
+        top: -160px;
+    }
+
+    .hero-div p {
+        position: relative;
+        top: -130px;
+        font-size: 1.35rem;
+        padding: 0 10px;
+    }
+
+    .hero-div h2 {
+        font-size: 1.45rem;
+        top: -195px;
+    }
+
+    .reciters-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(10, auto);
+        grid-gap: 20px;
+        width: 100%;
+        margin: 0 auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .reciter-div {
+        width: 100%;
+    }
+
+    .reciter-img {
+        width: 160px;
+        border-radius: 20px;
+        height: 130px;
+        transition: 1s linear ease-in-out;
+    }
+
+    .reciter-name {
+        width: 90%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #dedication p {
+        margin: 0 auto;
+        font-size: 0.8rem;
+        width: 90%;
+    }
+
+    #copyright p {
+        font-size: 0.7rem;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
