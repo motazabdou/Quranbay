@@ -16,40 +16,6 @@ toggleButton.addEventListener("click", function(){
     navigationLinks.style.alignItems = "center";
 });
 
-let prayerTimes = document.getElementsByTagName("a")[3];
-let prayerBox = document.querySelector(".prayer-times");
-let city = document.querySelector(".city");
-let fajrTime = document.querySelector(".fajr-time");
-let sunriseTime = document.querySelector(".sunrise-time");
-let duhrTime = document.querySelector(".duhr-time");
-let asrTime = document.querySelector(".asr-time");
-let maghribTime = document.querySelector(".maghrib-time");
-let ishaTime = document.querySelector(".isha-time");
-
-prayerTimes.addEventListener("click", function(){
-    navigator.geolocation.getCurrentPosition(function(position){
-        console.log(position);
-        let longitude = position.coords.longitude;
-        let latitude = position.coords.latitude;
-        console.log(`Longitude is ${position.coords.longitude}`);
-        console.log(`Latitude is ${position.coords.latitude}`);
-
-        fetch(`https://api.pray.zone/v2/times/today.json?longitude=${longitude}&latitude=${latitude}`)
-        .then(response => response.json())
-        .then(data => {
-            console.log(data);
-            prayerBox.style.display = "block";
-            city.innerHTML = data.results.location.country_code;
-            fajrTime.innerHTML = data.results.datetime[0].times.Fajr;
-            sunriseTime.innerHTML = data.results.datetime[0].times.Sunrise;
-            duhrTime.innerHTML = data.results.datetime[0].times.Dhuhr;
-            asrTime.innerHTML = data.results.datetime[0].times.Asr;
-            maghribTime.innerHTML = data.results.datetime[0].times.Maghrib;
-            ishaTime.innerHTML = data.results.datetime[0].times.Isha;
-        })
-    });
-});
-
 // let audio = document.querySelector(".quranPlayer");
 // let surahsContainer = document.querySelector(".surahs");
 // let ayah = document.querySelector(".ayah");
