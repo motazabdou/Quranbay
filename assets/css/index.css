@@ -20,7 +20,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.6);
     color: white;
     display: flex;
     font-family: "cocon-next-arabic";
@@ -98,7 +98,7 @@ header {
 }
 
 .header-overlay {
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.65);
     width: 100%;
     height: 100vh;
     display: grid;
@@ -151,7 +151,7 @@ header {
     position: relative;
     top: -70px;
     border: solid 1px white;
-    background-color: #062435;
+    background-color: #040C19;
     color: white;
     text-decoration: none;
     border-radius: 30px;
@@ -161,6 +161,7 @@ header {
 
 .hero-div a:hover {
     background-color: aqua;
+    border: solid 1px aqua;
     color: black;
     transition: 0.5s ease-in-out;
     box-shadow: 10px 15px 45px 10px rgba(0, 255, 255, 0.41);
@@ -222,130 +223,6 @@ header {
     transition: 1s linear ease-in-out;
 }
 
-/* .reciters-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 25px;
-    grid-template-areas:
-    "abdulbasit-murattal abdulbasit-mujawwad elbanna-murattal elbanna-mujawwad"
-    "elhosary-murattal elhosary-mujawwad minshawy-murattal minshawy-mujawwad"
-    "ismael sudais shurayyem shatri"
-    "tablawi meakly-murattal meakly-mujawwad suwayyid"
-    "suwayyid kahtani huthaifi lohaidan";
-    justify-items: center;
-    align-items: center;
-    width: 90%;
-    height: auto;
-}
-
-.reciter-div {
-    width: 100%;
-    height: 100%;
-}
-
-#reciters a {
-    text-decoration: none;
-    color: black;
-  }
-
-  .reciter-img {
-    width: 250px;
-    border-radius: 20px;
-    height: 200px;
-    transition: 1s linear ease-in-out;
-  }
-
-  .reciter-img:hover, .reciter-name:hover {
-    transform: scale(1.015);
-  }
-
-  .reciter-name {
-    font-weight: bold;
-    font-family: jazeera;
-    transition: 1s linear ease-in-out;
-  }
-
-.abdulbasit-murattal {
-    grid-area: abdulbasit-murattal;
-}
-
-.abdulbasit-mujawwad {
-    grid-area: abdulbasit-mujawwad;
-}
-
-.elbanna-murattal {
-    grid-area: elbanna-murattal;
-}
-
-.elbanna-mujawwad {
-    grid-area: elbanna-mujawwad;
-}
-
-.elhosary-murattal {
-    grid-area: elhosary-murattal;
-}
-
-.elhosary-mujawwad {
-    grid-area: elhosary-mujawwad;
-}
-
-.minshawy-murattal {
-    grid-area: minshawy-murattal;
-}
-
-.minshawy-mujawwad {
-    grid-area: minshawy-mujawwad;
-}
-
-.ismael {
-    grid-area: ismael;
-}
-
-.sudais {
-    grid-area: sudais;
-}
-
-.shurayyem {
-    grid-area: shurayyem;
-}
-
-.shatri {
-    grid-area: shatri;
-}
-
-.tablawi {
-    grid-area: tablawi;
-}
-
-.meakly-murattal {
-    grid-area: meakly-murattal;
-}
-
-.meakly-mujawwad {
-    grid-area: meakly-mujawwad;
-}
-
-.suwayyid {
-    grid-area: suwayyid;
-}
-
-.suwayyid {
-    grid-area: suwayyid;
-}
-
-.kahtani {
-    grid-area: kahtani;
-}
-
-.huthaifi {
-    grid-area: huthaifi;
-}
-
-.lohaidan {
-    grid-area: lohaidan;
-} */
-
 /*********************** Dedication ************************/
 
 #dedication {
@@ -355,7 +232,7 @@ header {
     font-family: "cocon-next-arabic";
     text-align: center;
     width: auto;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.7);
 }
 
 #dedication p {
