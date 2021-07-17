@@ -311,6 +311,10 @@ input[type="text"], input[type="email"], textarea {
     opacity: 0.55;
 }
 
+.submitBtn {
+    text-align: center;
+}
+
 input[type="submit"] {
     border: solid 1px white;
     background-color: #040C19;
