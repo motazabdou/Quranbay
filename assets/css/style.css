@@ -246,7 +246,11 @@ table a {
 .player .ayah-meakly, .player .ayah-ismael,
 .player .ayah-elbanna, .player .ayah-abdulbasit-murattal,
 .player .ayah-tablawi, .player .ayah-shatri,
-.player .ayah-sudais {
+.player .ayah-sudais, .player .ayah-elbanna-murattal,
+.player .ayah-elhosary-murattal, .player .ayah-minshawy-murattal,
+.player .ayah-balilah, .player .ayah-abdulbari,
+.player .ayah-lahuni, .player .ayah-kahtani,
+.player .ayah-huzaifi, .player .ayah-ayyoub{
     padding: 0 0 10px 0;
     font-size: 30px;
     color: white;
@@ -302,7 +306,11 @@ table a {
 .surahs-meakly, .surahs-ismael,
 .surahs-elbanna, .surahs-abdulbasit-murattal,
 .surahs-tablawi, .surahs-shatri,
-.surahs-sudais {
+.surahs-sudais, .surahs-ayyoub,
+.surahs-balilah, .surahs-minshawy-murattal,
+.surahs-elhosary-murattal, .surahs-elbanna-murattal,
+.surahs-abdulbari, .surahs-lahuni,
+.surahs-huzaifi, .surahs-kahtani{
   margin-top: 20px;
   width: 100%;
   font-family: "taha-naskh";
@@ -313,7 +321,11 @@ table a {
 .surahs-meakly > div, .surahs-ismael > div,
 .surahs-elbanna > div, .surahs-abdulbasit-murattal > div,
 .surahs-tablawi > div, .surahs-shatri > div,
-.surahs-sudais > div {
+.surahs-sudais > div, .surahs-ayyoub > div,
+.surahs-balilah > div, .surahs-minshawy-murattal > div,
+.surahs-elhosary-murattal > div, .surahs-elbanna-murattal > div,
+.surahs-abdulbari > div, .surahs-lahuni > div,
+.surahs-huzaifi > div, .surahs-kahtani > div {
    color: black;
    background: rgba(252, 255, 255, 0.5);
    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
@@ -339,7 +351,11 @@ table a {
 .surahs-meakly > div::after, .surahs-ismael > div::after,
 .surahs-elbanna > div::after, .surahs-abdulbasit-murattal > div::after,
 .surahs-tablawi > div::after, .surahs-shatri > div::after,
-.surahs-sudais > div::after {
+.surahs-sudais > div::after, .surahs-ayyoub > div::after,
+.surahs-balilah > div::after, .surahs-minshawy-murattal > div::after,
+.surahs-elhosary-murattal > div::after, .surahs-elbanna-murattal > div::after,
+.surahs-abdulbari > div::after, .surahs-lahuni > div::after,
+.surahs-huzaifi > div::after, .surahs-kahtani > div::after {
     content: counter(surah-counter);
     height: 50px;
     width: 50px;
@@ -362,7 +378,11 @@ table a {
 .surahs-meakly > div::before, .surahs-ismael > div::before,
 .surahs-elbanna > div::before, .surahs-abdulbasit-murattal > div::before,
 .surahs-tablawi > div::before, .surahs-shatri > div::before,
-.surahs-sudais > div::before {
+.surahs-sudais > div::before, .surahs-ayyoub > div::before,
+.surahs-balilah > div::before, .surahs-minshawy-murattal > div::before,
+.surahs-elhosary-murattal > div::before, .surahs-elbanna-murattal > div::before,
+.surahs-abdulbari > div::before, .surahs-lahuni > div::before,
+.surahs-huzaifi > div::before, .surahs-kahtani > div::before {
     content: "";
     position: absolute;
     border: 7px solid transparent;
@@ -372,17 +392,16 @@ table a {
     left: -15px;
 }
 
-.surahs > div:hover,
-.surahs-shurayyem> div:hover,
-.surahs-elhosary> div:hover,
-.surahs-minshawy> div:hover,
-.surahs-meakly> div:hover,
-.surahs-ismael> div:hover,
-.surahs-elbanna> div:hover,
-.surahs-abdulbasit-murattal> div:hover,
-.surahs-tablawi> div:hover,
-.surahs-shatri> div:hover,
-.surahs-sudais> div:hover {
+.surahs > div:hover, .surahs-shurayyem> div:hover,
+.surahs-elhosary> div:hover, .surahs-minshawy> div:hover,
+.surahs-meakly> div:hover, .surahs-ismael> div:hover,
+.surahs-elbanna> div:hover, .surahs-abdulbasit-murattal> div:hover,
+.surahs-tablawi> div:hover, .surahs-shatri> div:hover,
+.surahs-sudais> div:hover, .surahs-ayyoub > div:hover,
+.surahs-balilah > div:hover, .surahs-minshawy-murattal > div:hover,
+.surahs-elhosary-murattal > div:hover, .surahs-elbanna-murattal > div:hover,
+.surahs-abdulbari > div:hover, .surahs-lahuni > div:hover,
+.surahs-huzaifi > div:hover, .surahs-kahtani > div:hover {
   background: white;
 }
 
@@ -407,7 +426,25 @@ table a {
 .surahs-shatri> div:hover::after,
 .surahs-shatri > div:hover::before,
 .surahs-sudais> div:hover::after,
-.surahs-sudais > div:hover::before {
+.surahs-sudais > div:hover::before,
+.surahs-ayyoub> div:hover::after,
+.surahs-ayyoub > div:hover::before,
+.surahs-balilah> div:hover::after,
+.surahs-balilah > div:hover::before,
+.surahs-minshawy-murattal> div:hover::after,
+.surahs-minshawy-murattal > div:hover::before,
+.surahs-elhosary-murattal> div:hover::after,
+.surahs-elhosary-murattal > div:hover::before,
+.surahs-elbanna-murattal> div:hover::after,
+.surahs-elbanna-murattal > div:hover::before,
+.surahs-abdulbari> div:hover::after,
+.surahs-abdulbari > div:hover::before,
+.surahs-lahuni> div:hover::after,
+.surahs-lahuni > div:hover::before,
+.surahs-huzaifi> div:hover::after,
+.surahs-huzaifi > div:hover::before,
+.surahs-kahtani> div:hover::after,
+.surahs-kahtani > div:hover::before{
     border-right-color: white;
     color: black;
 }
@@ -415,6 +452,8 @@ table a {
 .swal-title {
     font-family: jazeera;
 }
+
+/**************************************************** Media Queries ******************************************/
 
 @media (max-width: 600px) {
   .toggle-button {
