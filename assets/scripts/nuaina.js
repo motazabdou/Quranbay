@@ -1,13 +1,13 @@
 let audio = document.querySelector(".quranPlayer");
-let surahsContainer = document.querySelector(".surahs-abdulbari");
-let ayah = document.querySelector(".ayah-abdulbari");
+let surahsContainer = document.querySelector(".surahs-nuaina");
+let ayah = document.querySelector(".ayah-nuaina");
 let next = document.querySelector(".next");
 let play = document.querySelector(".play");
 let prev = document.querySelector(".prev");
 
-getSurahsAbdulbari();
+getSurahsNuaina();
 
-function getSurahsAbdulbari(){
+function getSurahsNuaina(){
     fetch("https://api.alquran.cloud/v1/surah")
     .then(response => response.json())
     .then(data => {
@@ -21,7 +21,7 @@ function getSurahsAbdulbari(){
         }
 
         //select all surahs
-        let allSurahs = document.querySelectorAll(".surahs-abdulbari div");
+        let allSurahs = document.querySelectorAll(".surahs-nuaina div");
 
         allSurahs.forEach((surah,index) => {
             surah.addEventListener("click", function(){
@@ -30,12 +30,12 @@ function getSurahsAbdulbari(){
                 .then(data => {
                     console.log(data);
                     console.log(index+1);
-                    let verses = data.reciters[4].Server + "/00" + (index+1) + ".mp3";
+                    let verses = data.reciters[48].Server + "/00" + (index+1) + ".mp3";
                     if(index > 8 && index < 98){
-                      verses = data.reciters[4].Server + "/0" + (index+1) + ".mp3";
+                      verses = data.reciters[48].Server + "/0" + (index+1) + ".mp3";
                     }
                     else if(index > 98){
-                        verses = data.reciters[4].Server + "/" + (index+1) + ".mp3";
+                        verses = data.reciters[48].Server + "/" + (index+1) + ".mp3";
                       }
                     audio.src = verses;
                     ayah.innerHTML = surah.innerText;
@@ -48,12 +48,12 @@ function getSurahsAbdulbari(){
 
                         index++;
 
-                        verses = data.reciters[4].Server + "/00" + (index+1) + ".mp3";
+                        verses = data.reciters[48].Server + "/00" + (index+1) + ".mp3";
                         if(index > 8 && index < 98){
-                        verses = data.reciters[4].Server + "/0" + (index+1) + ".mp3";
+                        verses = data.reciters[48].Server + "/0" + (index+1) + ".mp3";
                         }
                         else if(index > 98){
-                            verses = data.reciters[4].Server + "/" + (index+1) + ".mp3";
+                            verses = data.reciters[48].Server + "/" + (index+1) + ".mp3";
                         }
 
                         audio.src = verses;
@@ -62,7 +62,7 @@ function getSurahsAbdulbari(){
                         isPlaying = true;
                         audio.play();
 
-                        // if(index = 4){
+                        // if(index = 48){
                         //     audio.addEventListener("ended", function(){
                         //         swal("إنتهت السورة", "", "success");
                         //         audio.pause();
@@ -83,12 +83,12 @@ function getSurahsAbdulbari(){
                     //handle next buttons
                     next.addEventListener("click", function(){
                         index++;
-                        verses = data.reciters[4].Server + "/00" + (index+1) + ".mp3";
+                        verses = data.reciters[48].Server + "/00" + (index+1) + ".mp3";
                         if(index > 8 && index < 98){
-                        verses = data.reciters[4].Server + "/0" + (index+1) + ".mp3";
+                        verses = data.reciters[48].Server + "/0" + (index+1) + ".mp3";
                         }
                         else if(index > 98){
-                            verses = data.reciters[4].Server + "/" + (index+1) + ".mp3";
+                            verses = data.reciters[48].Server + "/" + (index+1) + ".mp3";
                         }
                         audio.src = verses;
                         ayah.innerHTML = allSurahs[index].innerText;
@@ -100,12 +100,12 @@ function getSurahsAbdulbari(){
                     //Handle previous button
                     prev.addEventListener("click", function(){
                         index--;
-                        verses = data.reciters[4].Server + "/00" + (index+1) + ".mp3";
+                        verses = data.reciters[48].Server + "/00" + (index+1) + ".mp3";
                         if(index > 8 && index < 98){
-                        verses = data.reciters[4].Server + "/0" + (index+1) + ".mp3";
+                        verses = data.reciters[48].Server + "/0" + (index+1) + ".mp3";
                         }
                         else if(index > 98){
-                            verses = data.reciters[4].Server + "/" + (index+1) + ".mp3";
+                            verses = data.reciters[48].Server + "/" + (index+1) + ".mp3";
                         }
                         audio.src = verses;
                         ayah.innerHTML = allSurahs[index].innerText;
