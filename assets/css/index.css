@@ -20,7 +20,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.7);
     color: white;
     display: flex;
     font-family: "cocon-next-arabic";
@@ -159,7 +159,7 @@ header {
     font-family: "cocon-next-arabic";
 }
 
-.hero-div a:hover {
+.hero-div a:hover, input[type="submit"]:hover {
     background-color: aqua;
     border: solid 1px aqua;
     color: black;
@@ -267,6 +267,64 @@ header {
     color: gold;
 }
 
+/*************************** Contact ****************************/
+
+#contact {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+form {
+    width: 70%;
+    height: 90%;
+    background-color: rgba(0, 25, 25, 0.5);
+    backdrop-filter: blur(3px);
+    border: solid 0.1px rgb(99, 98, 98);
+    border-radius: 30px;
+    font-family: "cocon-next-arabic";
+    padding: 20px 40px;
+}
+
+form h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 15px 30px;
+    margin: 8px auto;
+    background-color: rgba(255,255,255,0.1);
+    border: none;
+    border-radius: 10px;
+    font-family: "cocon-next-arabic";
+    font-size: 1rem;
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.55;
+}
+
+input[type="submit"] {
+    border: solid 1px white;
+    background-color: #040C19;
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    padding: 15px 40px;
+    margin-bottom: 20px;
+    font-family: "cocon-next-arabic";
+    cursor: pointer;
+}
+
+/************************ Media Queries *************************/
+
 @media all and (max-width: 600px){
     .menu-icon {
         display: block;
@@ -305,19 +363,19 @@ header {
     .hero-img {
         width: 250px;
         position: relative;
-        top: -160px;
+        top: -140px;
     }
 
     .hero-div p {
         position: relative;
         top: -130px;
-        font-size: 1.35rem;
+        font-size: 1.7rem;
         padding: 0 10px;
     }
 
     .hero-div h2 {
         font-size: 1.45rem;
-        top: -195px;
+        top: -180px;
     }
 
     .reciters-container {
@@ -363,4 +421,144 @@ header {
         margin: 0 auto;
         font-family: Arial, Helvetica, sans-serif;
     }
+
+    form {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        border: none;
+        padding-top: 30px;
+    }
+
+    form h2 {
+        padding-bottom: 30px;
+    }
+    
+    input[type="text"], input[type="email"], textarea {
+        width: 100%;
+        padding: 15px 30px;
+        margin: 8px auto;
+        font-size: 1rem;
+    }
+    
+    input[type="submit"] {
+        border: solid 1px white;
+        background-color: #040C19;
+        color: white;
+        text-decoration: none;
+        border-radius: 30px;
+        padding: 15px 40px;
+        margin-bottom: 20px;
+        font-family: "cocon-next-arabic";
+        cursor: pointer;
+    }
+
+    textarea {
+        margin-bottom: 30px;
+    }
+}
+
+/**** Tablets ****/
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+    }
+
+    .menu-line {
+        height: 5px;
+        width: 35px;
+        background-color: white;
+        margin-bottom: 4px;
+    }
+
+    .logo-div {
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    .nav-list .list-item {
+        display: block;
+        text-align: center;
+    }
+
+    .nav-list {
+        display: none;
+        background-color: black;
+        width: 100%;
+        z-index: 10;
+        position: relative;
+        top: -10px;
+        transition: 1s all;
+    }
+
+    .active {
+        display: block;
+    }
+
+    .logo {
+        width: 70px;
+        margin-right: 20px;
+        margin-top: 10px;
+        z-index: 100;
+    }
+
+    .bismillah {
+        height: 80px;
+        position: relative;
+        top: -50px;
+    }
+
+    .hero-img {
+        width: 350px;
+        position: relative;
+        top: -200px;
+    }
+
+    .hero-div h2 {
+        position: relative;
+        top: -240px;
+        font-size: 2.5rem;
+    }
+
+    .hero-div p {
+        position: relative;
+        top: -160px;
+        font-size: 3.5rem;
+    }
+
+    .hero-div a {
+        position: relative;
+        top: -90px;
+        border-radius: 50px;
+        padding: 25px 50px;
+        font-size: 1.6rem;
+    }
+
+    .reciters-heading {
+        font-size: 2.5rem;
+    }
+
+    .reciters-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 30px;
+        width: 90%;
+        margin: 0 auto;
+        justify-items: center;
+        align-items: center;
+    }
+
+    #dedication {
+        padding: 30px 10px;
+        margin: 0 auto;
+        width: auto;
+    }
+
 }
