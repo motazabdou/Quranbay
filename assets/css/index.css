@@ -33,8 +33,7 @@ nav {
   }
   
   nav > label > a > img {
-    float: right;
-    
+    float: right;    
     width: 45px;
     margin-right: 20px;
     margin-top: 5px;
