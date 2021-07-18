@@ -476,54 +476,6 @@ input[type="submit"] {
 /**** Tablets ****/
 @media screen and (min-width: 600px) and (max-width: 768px) {
 
-    .menu-icon {
-        display: block;
-        position: absolute;
-        top: 25px;
-        left: 25px;
-    }
-
-    .menu-line {
-        height: 5px;
-        width: 35px;
-        background-color: white;
-        margin-bottom: 4px;
-    }
-
-    .logo-div {
-        width: 100%;
-    }
-
-    .navbar {
-        flex-direction: column;
-    }
-
-    .nav-list .list-item {
-        display: block;
-        text-align: center;
-    }
-
-    .nav-list {
-        display: none;
-        background-color: black;
-        width: 100%;
-        z-index: 10;
-        position: relative;
-        top: -10px;
-        transition: 1s all;
-    }
-
-    .active {
-        display: block;
-    }
-
-    .logo {
-        width: 70px;
-        margin-right: 20px;
-        margin-top: 10px;
-        z-index: 100;
-    }
-
     .bismillah {
         height: 80px;
         position: relative;
@@ -578,7 +530,7 @@ input[type="submit"] {
 
 }
 
-
+/**** Max-width 858px *****/
 @media (max-width: 858px){
     .checkbtn {
       display: block;
