@@ -358,6 +358,10 @@ input[type="submit"] {
         padding: 0.5rem 1rem;
       }
     
+      nav ul li:first-child {
+          display: none;
+      }
+    
       .active {
         display: flex;
         position: absolute;
@@ -552,6 +556,10 @@ input[type="submit"] {
       display: block;
       margin: 15vh 0;
       line-height: 30px;
+    }
+    
+    nav ul li:first-child {
+          display: none;
     }
   
     nav ul li a {
