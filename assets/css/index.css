@@ -279,7 +279,7 @@ header {
 
 form {
     width: 70%;
-    height: 90%;
+    height: auto;
     background-color: rgba(0, 25, 25, 0.5);
     backdrop-filter: blur(3px);
     border: solid 0.1px rgb(99, 98, 98);
@@ -312,6 +312,7 @@ input[type="text"], input[type="email"], textarea {
 
 .submitBtn {
     text-align: center;
+    height: auto;
 }
 
 input[type="submit"] {
@@ -321,7 +322,6 @@ input[type="submit"] {
     text-decoration: none;
     border-radius: 30px;
     padding: 15px 40px;
-    margin-bottom: 20px;
     font-family: "cocon-next-arabic";
     cursor: pointer;
 }
