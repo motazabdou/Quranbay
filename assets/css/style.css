@@ -146,14 +146,14 @@ nav {
 }
 
 .qari-details-img img {
-  width: 50%;
+  width: 350px;
   border-bottom: solid 3px white;
   border-radius: 50%;
 }
 
-.qari-details-img .meakly-img {
+/* .qari-details-img .meakly-img {
   width: 50%;
-}
+} */
 
 .qari-details-bio {
   grid-area: qari-details-bio;
