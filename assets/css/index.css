@@ -589,6 +589,12 @@ input[type="submit"] {
         margin-right: 30px;
         font-size: 1.7rem;
     }
+      
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.4rem;
+    }
 
     nav > label > a > img {
         float: right;
