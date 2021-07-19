@@ -22,7 +22,7 @@ body {
 nav {
   height: 60px;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.65);
   font-family: "cocon-next-arabic";
 }
 
@@ -423,6 +423,7 @@ input[type="submit"] {
   #contact {
     height: 100vh;
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   #copyright {
@@ -551,6 +552,7 @@ input[type="submit"] {
     justify-items: center;
     align-items: center;
     padding-bottom: 0;
+    padding-top: 0;
   }
 
   form {
