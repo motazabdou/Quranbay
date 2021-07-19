@@ -409,6 +409,31 @@ nav {
     font-family: jazeera;
 }
 
+/*********************** Copyright ************************/
+#copyright {
+  grid-area: copyright;
+  background-color: black;
+  color: white;
+  border-top: solid 1px white;
+  padding: 20px auto;
+  width: 100%;
+  text-align: center;
+  direction: ltr;
+  padding: 20px 0;
+}
+
+#copyright p {
+  font-size: 0.9rem;
+  width: auto;
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#copyright a {
+  text-decoration: none;
+  color: gold;
+}
+
 /**************************************************** Media Queries ******************************************/
 
 @media (max-width: 600px) {
