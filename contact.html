@@ -10,7 +10,7 @@
     <script src="https://kit.fontawesome.com/52177094a7.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
+    <!-- Trying old navbar -->
     <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -28,17 +28,16 @@
             <li class="list-item"><a href="contact.html">تواصل معنا</a></li>
         </ul>
     </nav>
-    
+     
     <section id="contact">
 
-        <form action="mailto:moutaz30@hotmail.com" method="POST">
+        <form action="mailto:moutaz30@hotmail.com" method="GET">
             <h2>تواصل معنا</h2>
 
-            <!-- <label for="name">الإسم:</label> -->
-            <input type="text" id="name" name="name" placeholder="الإسم:">
-            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني:">
+            <input type="text" id="name" name="name" placeholder="الإسم:" required>
+            <input type="email" id="email" name="email" placeholder="البريد الإلكتروني:" required>
             <input type="text" id="subject" name="subject" placeholder="عنوان الرسالة:">
-            <textarea name="message" id="message" cols="10" rows="5" placeholder="نص الرسالة:"></textarea>
+            <textarea name="message" id="message" cols="10" rows="5" placeholder="نص الرسالة:" required></textarea>
 
             <div class="submitBtn">
                 <input type="submit" value="إرسال">
@@ -47,6 +46,10 @@
         </form>
 
     </section>
+
+    <div id="copyright">
+        <p>Copyright &copy; QuranBay 2021. Website designed and developed by <a href="#">Motaz Abdou Web Development</a></p>
+    </div>
 
 
 
