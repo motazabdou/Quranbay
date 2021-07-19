@@ -353,10 +353,6 @@ input[type="submit"] {
     line-height: 30px;
   }
 
-  nav ul li:first-child {
-    display: none;
-  }
-
   nav ul li a {
     font-size: 20px;
   }
@@ -434,20 +430,12 @@ input[type="submit"] {
     line-height: 30px;
   }
 
-  nav ul li:first-child {
-    display: none;
-  }
-
   nav ul li a {
     font-size: 20px;
   }
 
   #check:checked~ul {
     left: 0;
-  }
-
-  nav ul li:first-child {
-    display: none;
   }
 
   .bismillah {
@@ -603,10 +591,6 @@ input[type="submit"] {
     line-height: 30px;
   }
 
-  nav ul li:first-child {
-    display: none;
-  }
-
   nav ul li a {
     font-size: 20px;
   }
@@ -694,10 +678,6 @@ input[type="submit"] {
     display: block;
     margin: 0 auto;
     line-height: 30px;
-  }
-
-  nav ul li:first-child {
-    display: none;
   }
 
   nav ul li a {
