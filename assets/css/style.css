@@ -494,11 +494,11 @@ nav {
   }
 }
 
-@media (max-width: 952px){
+/* @media (max-width: 952px){
   nav ul li a {
     font-size: 16px;
   }
-}
+} */
 
 /*******************************************/
 
@@ -593,5 +593,34 @@ nav {
   .fa-bars:before {
     content: "\f0c9";
     font-size: 2.3rem;
+  }
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1275px) and (-webkit-min-device-pixel-ratio: 2) {
+  nav {
+    height: 100px;
+  }
+
+  nav ul {
+    margin-left: 40px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    line-height: 90px;
+    margin-right: 30px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  nav>label>a>img {
+    float: right;
+    width: 65px;
+    margin-right: 40px;
+    margin-top: 10px;
   }
 }
