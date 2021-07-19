@@ -232,6 +232,7 @@ header {
     text-align: center;
     width: auto;
     background-color: rgba(0,0,0,0.7);
+    width: 100%;
 }
 
 #dedication p {
