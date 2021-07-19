@@ -265,7 +265,7 @@ header {
 
 /*************************** Contact ****************************/
 #contact {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.65);
   width: 100%;
   display: grid;
   justify-items: center;
