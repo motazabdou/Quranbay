@@ -256,6 +256,7 @@ nav {
 .surah-name-arabic {
     font-size: 24px;
     font-family: "amiri-bold";
+    user-select: none;
 }
 
 .surahs, .surahs-shurayyem,
