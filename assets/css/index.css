@@ -465,7 +465,7 @@ input[type="submit"] {
     margin: 0 auto;
     line-height: 30px;
     position: relative;
-    top: -20px;
+    top: -30px;
   }
 
   nav ul li a {
@@ -626,6 +626,8 @@ input[type="submit"] {
     display: block;
     margin: 0 auto;
     line-height: 30px;
+    position: relative;
+    top: -30px;
   }
 
   nav ul li a {
