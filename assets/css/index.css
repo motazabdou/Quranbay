@@ -766,23 +766,23 @@ input[type="submit"] {
   }
 
   .bismillah {
-    height: 90px;
+    height: 80px;
     position: relative;
-    top: -100px;
-  }
+    top: -80px;
+}
 
   .hero-img {
     width: 350px;
     position: relative;
-    top: -250px;
+    top: -230px;
   }
 
   .hero-div h2 {
     position: relative;
-    top: -300px;
+    top: -290px;
     color: gold;
     font-family: "cocon-next-arabic";
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
 
   .hero-div p {
@@ -803,7 +803,7 @@ input[type="submit"] {
     border-radius: 60px;
     padding: 25px 45px;
     font-family: "cocon-next-arabic";
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .reciters-container {
