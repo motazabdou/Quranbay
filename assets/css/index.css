@@ -770,14 +770,14 @@ input[type="submit"] {
   }
 
   .hero-img {
-    width: 390px;
+    width: 350px;
     position: relative;
-    top: -330px;
+    top: -250px;
   }
 
   .hero-div h2 {
     position: relative;
-    top: -390px;
+    top: -300px;
     color: gold;
     font-family: "cocon-next-arabic";
     font-size: 2.8rem;
@@ -793,7 +793,7 @@ input[type="submit"] {
 
   .hero-div a {
     position: relative;
-    top: -70px;
+    top: -120px;
     border: solid 1px white;
     background-color: #040C19;
     color: white;
