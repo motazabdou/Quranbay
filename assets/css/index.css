@@ -12,7 +12,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  background: url("../images/bg10.png");
+  background: url("../images/bg9.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -179,7 +179,7 @@ header {
   width: 100%;
   height: auto;
   text-align: center;
-  background-image: url("../images/white\ background1.jpg");
+  background-image: url("../images/white-background1.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
